@@ -18,7 +18,7 @@ export function Hero() {
                 setError(true);
             } else {
                 setSuccess(true);
-                const fileUrl = 'docs/Curriculo - Mateus Ferreira.pdf';
+                const fileUrl = 'docs/curriculo.pdf';
                 const link = document.createElement('a');
                 link.href = fileUrl;
                 link.download = 'Currículo - Mateus Ferreira';
