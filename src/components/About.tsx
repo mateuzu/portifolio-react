@@ -88,7 +88,7 @@ export function About() {
                             </tbody>
                         </table>
                     </div>
-                    <div className="absolute -left-2 -top-4 h-24 w-20 rounded-lg bg-azul_cinza_claro bg-cover bg-center md:-left-12 md:-top-12 md:h-72 md:w-56 bg-[url(images/about-foto.jpg)] "></div>
+                    <div className="absolute -left-2 -top-4 h-24 w-20 rounded-lg bg-azul_cinza_claro bg-cover bg-center md:-left-12 md:-top-12 md:h-72 md:w-56 bg-[url(https://res.cloudinary.com/dnttxkyym/image/upload/v1697663168/mockups-projetos/about-10-18_%C3%A0_s_13.39.32_ae4d19fe_c3kgus.jpg)] "></div>
                 </div>
             </div>
         </section>
