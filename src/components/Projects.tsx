@@ -3,8 +3,8 @@ import { HiArrowTopRightOnSquare } from "react-icons/hi2"
 export function Projects() {
     const projects = [
         {
-            title: "Portfólio - Github",
-            description: "Confira meu GitHub para ver meus projetos de programação e contribuições. É onde compartilho meu trabalho e minha paixão por tecnologia",
+            title: "Github",
+            description: "GitHub contendo meus projetos de programação e algumas contribuições. É onde compartilho meu trabalho também meus estudos pessoais. ",
             image:
                 "https://res.cloudinary.com/dnttxkyym/image/upload/v1697659789/mockups-projetos/mockupgit-2_h8udxi.png",
             link: "https://github.com/mateuzu",
@@ -12,7 +12,7 @@ export function Projects() {
         },
         {
             title: "NutriVidas",
-            description: "Projeto estruturado como um e-commerce que visa facilitar o acesso dos usuários à alimentos orgânicos e produtos sustentáveis.",
+            description: "Projeto estruturado como um e-commerce que visa facilitar o acesso dos usuários à alimentos orgânicos e produtos sustentáveis e contribuir com a ODS 2 - Fome Zero.",
             image:
                 "https://res.cloudinary.com/dnttxkyym/image/upload/v1697572953/mockups-projetos/nutri-mockup-phonelogo_ppy5r6.png",
             link: "https://nutri-vidas.vercel.app",
@@ -45,11 +45,11 @@ export function Projects() {
                                 className={`group relative h-52 cursor-default rounded-lg ${project.colSpan} bg-cover bg-center`}
                                 style={{ backgroundImage: `url('${project.image}')` }}
                             >
-                                <div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center rounded-lg bg-azul_meianoite_escuro text-white opacity-0 transition-opacity group-hover:opacity-100 backdrop-blur-md bg-opacity-50">
+                                <div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center rounded-lg bg-azul_meianoite_escuro text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 backdrop-blur-md bg-opacity-50">
                                     <h4 className="font-headline text-lg font-semibold">
                                         {project.title}
                                     </h4>
-                                    <p className=" mb-4 p-3 font-headline text-center">{project.description}</p>
+                                    <p className=" mb-2 p-1 md:p-3 font-normal md:font-headline text-center">{project.description}</p>
                                     <a href={project.link} target="_blank">
                                         <HiArrowTopRightOnSquare className="h-6 w-6 hover:scale-105 transition-transform duration-200" />
                                     </a>

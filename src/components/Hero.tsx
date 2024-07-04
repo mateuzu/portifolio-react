@@ -18,7 +18,7 @@ export function Hero() {
                 setError(true);
             } else {
                 setSuccess(true);
-                const fileUrl = 'docs/curriculo.pdf';
+                const fileUrl = 'docs/curriculo-mateus.pdf';
                 const link = document.createElement('a');
                 link.href = fileUrl;
                 link.download = 'Currículo - Mateus Ferreira';
@@ -37,14 +37,19 @@ export function Hero() {
                         <span className="font-headline text-5xl font-light text-cinza_claro"> Ferreira </span>
                     </h1>
 
-                    <h2 className="font-semibold flex items-center gap-3     text-center md:text-left">
+                    <h2 className="font-semibold flex items-center gap-3 text-left">
                         <div className="h-1 w-12 rounded-full bg-azul_marinho" />
-                        Desenvolvedor Java Back-end
+                        Desenvolvedor Java Backend
                     </h2>
 
-                    <p className="text-cinza_claro my-6 text-center md:text-left">
-                        Sou um estudante apaixonado por desenvolvimento com foco em Java, Spring, API Rest e MySQL, em busca de oportunidades para aprender, crescer e contribuir para o mundo da tecnologia.
-                    </p>
+                    <div className=''>
+                        <p className="text-cinza_claro my-6 text-left">
+                            Sou um estudante de Análise e Desenvolvimento de Sistemas, com foco de desenvolvimento backend. Minha área de estudo inclui tecnologias como: Java, Spring, API Rest e MySQL/PostgreSQL, Docker, Kubernetes, Kafka e RabbitMQ. 
+                        </p>
+                        <p className="text-cinza_claro my-6 text-left"> 
+                            Estou em busca de oportunidades para aprender, crescer e contribuir para o mundo da tecnologia.
+                        </p>
+                    </div>
 
                     <div className="flex items-center justify-center md:justify-start gap-3">
                         <a href="#contact" className="underline font-bold text-white hover:text-gray-100">
@@ -64,7 +69,7 @@ export function Hero() {
                             ) : (
                                 <HiDocumentArrowDown />
                             )}
-                            Baixar meu CV
+                            Baixe meu Currículo
                         </button>
                     </div>
                 </div>

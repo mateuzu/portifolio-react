@@ -2,7 +2,6 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { BsTelephone } from 'react-icons/bs'
 import { HiOutlineLocationMarker } from 'react-icons/hi'
 import { AiOutlineInfoCircle } from 'react-icons/ai'
-import { BsCalendar } from 'react-icons/bs'
 
 export function About() {
     return (
@@ -23,15 +22,8 @@ export function About() {
                             <span className="mr-1">Me chamo</span>
                             <span className="font-headline font-bold text-azul_profundo">Mateus Ferreira</span>
                         </p>
-                        <table className="mt-4 w-full text-sm">
+                        <table className="mt-4 w-full flex justify-center items-center text-sm">
                             <tbody>
-                                <tr>
-                                    <td className="font-headline font-bold uppercase text-azul_profundo flex gap-2 items-center">
-                                        <BsCalendar />
-                                        Idade:
-                                    </td>
-                                    <td className='whitespace-nowrap overflow-hidden overflow-ellipsis'>21</td>
-                                </tr>
                                 <tr>
                                     <td className="font-headline font-bold uppercase text-azul_profundo flex gap-2 items-center">
                                         <BsTelephone />

@@ -1,11 +1,12 @@
 import { HiComputerDesktop } from "react-icons/hi2"
 import { FiCloud } from 'react-icons/fi';
+import { BiSupport } from "react-icons/bi";
 
 export function Services() {
   const services = [
     {
       title: "API Rest",
-      description: "Desenvolvimento de sistemas e APIs REST com Java e Spring Boot",
+      description: "Desenvolvimento de sistema, APIs REST e Microserviços com Java e Spring Boot",
       icon: <FiCloud className="h-12 w-12" />,
     },
     {
@@ -13,6 +14,12 @@ export function Services() {
       description:
         "Desenvolvimento de sites e sistemas web estáticos e dinâmicos com React, HTML5 e CSS3.",
       icon: <HiComputerDesktop className="h-12 w-12" />,
+    },
+    {
+      title: "Suporte Computacional",
+      description:
+        "Suporte computacional abrangente para manter sistemas em funcionamento.",
+      icon: <BiSupport className="h-12 w-12" />,
     }
   ]
 
@@ -25,7 +32,7 @@ export function Services() {
         </h2>
 
         <p className="text-sm text-gray-600">
-          Posso atender uma  variedade de serviços, abrangendo desde o desenvolvimento front-end até o back-end, incluindo integração com bancos de dados e sistemas.
+          Posso atender uma  variedade de serviços em uma empresa, abrangendo desde o desenvolvimento front-end até o back-end, integração com bancos de dados e sistemas, containerização, suporte computacional e sustentação.
         </p>
       </div>
 
@@ -33,9 +40,9 @@ export function Services() {
         {
           services.map((services, index) => (
             <div
-              className="basis-1/2 rounded-lg bg-azul_noturno p-4 text-white hover:scale-105 transition-transform duration-300"
+              className="basis-1/2 rounded-lg bg-azul_noturno  p-5 text-white hover:scale-105 transition-transform duration-300"
               key={`service-${index}`}>
-              <div className="mb-2">{services.icon}</div>
+              <div className="mb-2 flex justify-center">{services.icon}</div>
               <h3 className="text-xl font-bold">{services.title}</h3>
               <p className="text-sm">{services.description}</p>
             </div>

@@ -44,7 +44,6 @@ export function Contact() {
         {
             name: "WhatsApp",
             description: "+55 11 98891-6005",
-            link: "https://wa.me/5511988916005?text=Olá...",
             icon: <FaWhatsapp className="h-10 w-10 text-[#25D366]" />,
         },
         {
@@ -62,13 +61,12 @@ export function Contact() {
         {
             name: "São Paulo - SP",
             description: "",
-            link: "https://goo.gl/maps/4yacADQtLB8jz8zn9?coh=178573&entry=tt",
             icon: <HiOutlineMapPin className="h-10 w-10 text-[#FFC107]" />,
         },
     ]
 
     return (
-        <section id="contact" className="bg-gradient-to-tr from-azul_marinho_profundo to-azul_cinza_escuro text-white md:rounded-tr-[50px]">
+        <section id="contact" className="bg-gradient-to-tr from-azul_marinho_profundo to-azul_cinza_escuro text-white">
             <div className="container mx-auto max-w-4xl p-4 py-8">
                 <div className="mb-6">
                     <h2 className="z-50 mb-2">
@@ -78,8 +76,7 @@ export function Contact() {
                         <span className="font-handwriting text-4xl text-cinza_claro">Em Contato</span>
                     </h2>
                     <p className="text-sm">
-                        Entre em contato por formulário ou WhatsApp, com certeza irei poder
-                        te ajudar.
+                        Entre em contato por E-mai, WhatsApp ou Linkedin.
                     </p>
                 </div>
 
@@ -140,8 +137,15 @@ export function Contact() {
                                     disabled={loading}
                                 >
                                     {loading && <FaSpinner className="h-4 w-4 animate-spin" />}
-                                    {success && <HiCheckCircle className="h-4 w-4 text-green-700" />}
-                                    Enviar mensagem
+                                    {success ? (
+                                        <span className="flex items-center">
+                                            <HiCheckCircle className="h-4 w-4 text-green-700 mr-1" />
+                                            Mensagem enviada
+                                        </span>
+                                        ) : (
+                                            'Enviar mensagem'
+                                        )
+                                    }
                                 </button>
 
                                 {error && (
@@ -155,11 +159,9 @@ export function Contact() {
                     </div>
                     <div className="basis-1/3">
                         {contacts.map((contact, index) => (
-                            <div
-                                key={`contact-${index}`}
-                                className="mb-4 flex items-center gap-4 rounded-lg border border-white p-4 hover:bg-white hover:text-azul_profundo transition duration-300"
-                            >
-                                {contact.icon}
+                            <div key={`contact-${index}`}
+                                className="mb-4 flex items-center gap-4 rounded-lg border border-white p-4 hover:bg-white hover:text-azul_profundo transition duration-300">
+                                <a href={contact.link} target="_blank" className=""> {contact.icon}</a>
                                 <div className="">
                                     <p className="font-headline font-semibold">{contact.name}</p>
                                     <a
