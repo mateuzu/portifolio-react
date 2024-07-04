@@ -69,7 +69,7 @@ export function Hero() {
                             ) : (
                                 <HiDocumentArrowDown />
                             )}
-                            Baixe meu Currículo
+                            Baixe meu CV
                         </button>
                     </div>
                 </div>
