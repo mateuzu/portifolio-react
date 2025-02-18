@@ -8,7 +8,7 @@ export function Projects() {
             image:
                 "https://res.cloudinary.com/dnttxkyym/image/upload/v1697659789/mockups-projetos/mockupgit-2_h8udxi.png",
             link: "https://github.com/mateuzu",
-            colSpan: "col-span-2 ",
+            colSpan: "col-span-1 md:col-span-2",
         },
         {
             title: "NutriVidas",
@@ -16,6 +16,14 @@ export function Projects() {
             image:
                 "https://res.cloudinary.com/dnttxkyym/image/upload/v1697572953/mockups-projetos/nutri-mockup-phonelogo_ppy5r6.png",
             link: "https://nutri-vidas.vercel.app",
+            colSpan: "col-span-1 md:col-span-2",
+        },
+        {
+            title: "Arquitejuh Consultoria",
+            description: "Landing page para uma arquiteta com o objetivo de divulgar sua consultoria de design de interiores e atrair novos clientes.",
+            image:
+                "https://res.cloudinary.com/dnttxkyym/image/upload/v1739894450/Arquitejuh_COnsultoria_1_ngdtn9.jpg",
+            link: "https://arquitejuh.vercel.app/",
             colSpan: "col-span-1 md:col-span-2",
         }
     ]
@@ -42,8 +50,8 @@ export function Projects() {
                         {projects.map((project, index) => (
                             <div
                                 key={index}
-                                className={`group relative h-52 cursor-default rounded-lg ${project.colSpan} bg-cover bg-center`}
-                                style={{ backgroundImage: `url('${project.image}')` }}
+                                className={`group relative h-56 cursor-default rounded-lg ${project.colSpan} bg-cover bg-center`}
+                                style={{ backgroundImage: `url('${project.image}')`, objectFit:'contain'}}
                             >
                                 <div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center rounded-lg bg-azul_meianoite_escuro text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 backdrop-blur-md bg-opacity-50">
                                     <h4 className="font-headline text-lg font-semibold">

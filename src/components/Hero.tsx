@@ -18,7 +18,7 @@ export function Hero() {
                 setError(true);
             } else {
                 setSuccess(true);
-                const fileUrl = 'docs/curriculo-mateus.pdf';
+                const fileUrl = 'docs/Mateus Costa - Curriculo.pdf';
                 const link = document.createElement('a');
                 link.href = fileUrl;
                 link.download = 'Currículo - Mateus Ferreira';
@@ -39,12 +39,16 @@ export function Hero() {
 
                     <h2 className="font-semibold flex items-center gap-3 text-left">
                         <div className="h-1 w-12 rounded-full bg-azul_marinho" />
-                        Desenvolvedor Java Backend
+                        Analista de Sistemas
                     </h2>
 
                     <div className=''>
                         <p className="text-cinza_claro my-6 text-left">
-                            Sou um estudante de Análise e Desenvolvimento de Sistemas, com foco de desenvolvimento backend. Minha área de estudo inclui tecnologias como: Java, Spring, API Rest e MySQL/PostgreSQL, Docker, Kubernetes, Kafka e RabbitMQ. 
+                        Sou um estudante de Análise e Desenvolvimento de Sistemas com um perfil analítico que me permite 
+                        diagnosticar, promover e desenvolver soluções com tecnologia em uma empresa.
+                        </p>
+                        <p className="text-cinza_claro my-6 text-left"> 
+                            Minha área de estudo inclui tecnologias/ferramentas como: Java, Spring Boot, API Rest, MySQL/PostgreSQL, Docker e Kubernetes. 
                         </p>
                         <p className="text-cinza_claro my-6 text-left"> 
                             Estou em busca de oportunidades para aprender, crescer e contribuir para o mundo da tecnologia.
